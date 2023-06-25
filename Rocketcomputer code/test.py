@@ -7,12 +7,4 @@ input1 = machine.Pin(14, machine.Pin.IN, machine.Pin.PULL_DOWN)
 
 print("Starting shit")
 
-led_onboard.value(1)
-
-
-while True:
-    print(input1.value())
-    print("test")
-    utime.sleep(2)
-
-print("Stopping Shit")
+led_onboard.value(0)
