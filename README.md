@@ -17,7 +17,7 @@ All of this is for our project, do not use this stuff if you don't know what all
 2. Hardware
     1. Motor
     2. Shell
-    3. Nozel
+    3. Nozzle
     4. Cone
     5. Fins
 6. Real-world tests
@@ -43,15 +43,15 @@ The RES(Rocket-Enviremont-Simulator) is another Raspberry Pico that is connect (
 
 ### Motor
 
-The rocket uses standart DP9 model rocket motors.
+The rocket uses standart D9P model rocket motors.
 
 ### Shell
 
 The Shell is made of plexiglass
 
-### Nozel
+### Nozzle
 
-The Nozel is made of bent sheet metal
+The Nozzle is made out of bent sheet metal: Soon
 
 ### Cone
 
