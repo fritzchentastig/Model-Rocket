@@ -4,7 +4,11 @@ import _thread
 
 led_onboard = machine.Pin(25, machine.Pin.OUT)
 launch_button = machine.Pin(16, machine.Pin.IN, machine.Pin.PULL_DOWN)
+parachute = PWM(Pin(26))
+parachute.freq(50)
 
+grad000 = 500000
+grad180 = 2500000
 est_fly_time = 30
 
 global launch_startdel
@@ -29,7 +33,12 @@ def countdowntostart():
         led_onboard.toggle()
         utime.sleep(0.1)
     led_onboard.value(1)
-    
+
+def parachute_deploy():
+    parachute.duty_ns(grad180)
+    sleep(10)
+    parachute.duty_ns(grad000)
+    sleep(2)
     
     
     
